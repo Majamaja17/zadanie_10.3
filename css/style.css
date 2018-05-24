@@ -1,0 +1,39 @@
+* {
+	box-sizing: border-box;
+}
+
+.row::before,
+.row::after {
+	content:"";
+	display: table ;
+	clear: both;
+ }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.slider-wrapper {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+#carousel {
+  width: 500%;
+  height: 100%;
+  position: relative;
+
+}
+
+.slide {
+  width: 1500;
+  height: 100%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
